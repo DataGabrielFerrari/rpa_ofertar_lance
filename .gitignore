@@ -1,0 +1,50 @@
+# ============================================================
+# SEGURANCA — NUNCA VERSIONAR (credenciais e segredos)
+# ============================================================
+.env
+.envrc
+credenciais/*
+!credenciais/google_auth.py
+token.json
+client_secret*.json
+*.pem
+*.key
+
+# ============================================================
+# DADOS DE PRODUCAO — nao e codigo (comprovantes, prints, logs)
+# ============================================================
+lotes/
+Lotes/
+lotes_lance/
+notificacoes_pendentes/
+*.pdf
+*.png
+*.log
+
+# ============================================================
+# Ambiente Python
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+# IDE / SO
+# ============================================================
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+tempCodeRunnerFile.py
